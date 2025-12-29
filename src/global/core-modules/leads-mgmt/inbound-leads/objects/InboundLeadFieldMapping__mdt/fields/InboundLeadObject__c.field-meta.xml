@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InboundLeadObject__c</fullName>
+    <description>Must always be the &quot;InboundLead__c&quot; object.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Make sure you select &quot;Inbound Lead&quot; object</inlineHelpText>
+    <label>Inbound Lead Object</label>
+    <referenceTo>EntityDefinition</referenceTo>
+    <relationshipLabel>InboundLeadObjects</relationshipLabel>
+    <relationshipName>InboundLeadObjects</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

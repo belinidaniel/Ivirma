@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OverwrittenReferralCategory__c</fullName>
+    <description>Should only be populated when NOT linking the referral source to a EmrServerReferralSourceMetadata__c record.
+Works alongside the &quot;Provider&quot; lookup field.</description>
+    <label>Overwritten Referral Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Doctor_OBGYN</fullName>
+                <default>false</default>
+                <label>Doctor_OBGYN</label>
+            </value>
+            <value>
+                <fullName>Doctor_Non OBGYN</fullName>
+                <default>false</default>
+                <label>Doctor_Non OBGYN</label>
+            </value>
+            <value>
+                <fullName>Acupuncturist</fullName>
+                <default>false</default>
+                <label>Acupuncturist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

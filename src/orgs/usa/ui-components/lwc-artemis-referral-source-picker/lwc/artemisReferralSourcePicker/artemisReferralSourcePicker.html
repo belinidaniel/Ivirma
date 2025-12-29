@@ -1,0 +1,14 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<lightning-combobox label="Referral Category" value={selectedCategoryId} options={categories} onchange={handleChangeSelectedCategory}></lightning-combobox>
+	<lightning-combobox
+		label="Referral By"
+		disabled={disabledReferralBySelection}
+		value={selectedRecordId}
+		options={referralSourcesForSelectedCategory}
+		onchange={handleChangeSelectedReferralSource}
+	></lightning-combobox>
+</template>

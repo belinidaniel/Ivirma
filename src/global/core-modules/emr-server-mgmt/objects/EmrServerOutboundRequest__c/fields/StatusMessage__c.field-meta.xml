@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusMessage__c</fullName>
+    <description>Contains the status message returned by the EMR Server in response to a request. This message provides additional context regarding the outcome of the operation, such as success confirmation, error details, or informational notifications, aiding in troubleshooting and understanding system behavior.</description>
+    <label>Status Message</label>
+    <length>10000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

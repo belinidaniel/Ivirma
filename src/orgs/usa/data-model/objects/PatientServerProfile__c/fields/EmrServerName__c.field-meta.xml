@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmrServerName__c</fullName>
+    <description>Used mainly in Flows to prevent additional queries and logic to get the server name.</description>
+    <externalId>false</externalId>
+    <formula>EmrServer__r.Name</formula>
+    <label>EMR Server Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

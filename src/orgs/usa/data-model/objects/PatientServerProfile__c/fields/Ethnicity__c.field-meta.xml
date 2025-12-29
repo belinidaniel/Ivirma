@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ethnicity__c</fullName>
+    <label>Ethnicity</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hispanic</fullName>
+                <default>false</default>
+                <label>Hispanic</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Non-Hispanic</fullName>
+                <default>false</default>
+                <label>Non-Hispanic</label>
+            </value>
+            <value>
+                <fullName>Refused</fullName>
+                <default>false</default>
+                <label>Refused</label>
+            </value>
+            <value>
+                <fullName>White non-Hispanic</fullName>
+                <default>false</default>
+                <label>White non-Hispanic</label>
+            </value>
+            <value>
+                <fullName>White Hispanic</fullName>
+                <default>false</default>
+                <label>White Hispanic</label>
+            </value>
+            <value>
+                <fullName>Black non-Hispanic</fullName>
+                <default>false</default>
+                <label>Black non-Hispanic</label>
+            </value>
+            <value>
+                <fullName>Black Hispanic</fullName>
+                <default>false</default>
+                <label>Black Hispanic</label>
+            </value>
+            <value>
+                <fullName>Asian non-Hispanic</fullName>
+                <default>false</default>
+                <label>Asian non-Hispanic</label>
+            </value>
+            <value>
+                <fullName>Asian Hispanic</fullName>
+                <default>false</default>
+                <label>Asian Hispanic</label>
+            </value>
+            <value>
+                <fullName>American Indian</fullName>
+                <default>false</default>
+                <label>American Indian</label>
+            </value>
+            <value>
+                <fullName>Other, please specify</fullName>
+                <default>false</default>
+                <label>Other, please specify</label>
+            </value>
+            <value>
+                <fullName>Refused/Choose not to disclose</fullName>
+                <default>false</default>
+                <label>Refused/Choose not to disclose</label>
+            </value>
+            <value>
+                <fullName>American Indian/Alaska Native</fullName>
+                <default>false</default>
+                <label>American Indian/Alaska Native</label>
+            </value>
+            <value>
+                <fullName>Asian</fullName>
+                <default>false</default>
+                <label>Asian</label>
+            </value>
+            <value>
+                <fullName>Black/African American</fullName>
+                <default>false</default>
+                <label>Black/African American</label>
+            </value>
+            <value>
+                <fullName>Hispanic/Latino</fullName>
+                <default>false</default>
+                <label>Hispanic/Latino</label>
+            </value>
+            <value>
+                <fullName>Native Hawaiian/Other Pacific</fullName>
+                <default>false</default>
+                <label>Native Hawaiian/Other Pacific</label>
+            </value>
+            <value>
+                <fullName>White/Caucasian</fullName>
+                <default>false</default>
+                <label>White/Caucasian</label>
+            </value>
+            <value>
+                <fullName>Not Asked</fullName>
+                <default>false</default>
+                <label>Not Asked</label>
+            </value>
+            <value>
+                <fullName>Not Provided</fullName>
+                <default>false</default>
+                <label>Not Provided</label>
+            </value>
+            <value>
+                <fullName>Asked but unknown</fullName>
+                <default>false</default>
+                <label>Asked but unknown</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

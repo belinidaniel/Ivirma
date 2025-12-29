@@ -1,0 +1,29 @@
+<template>
+	<lightning-modal-header label="Confirm Changes"></lightning-modal-header>
+	<lightning-modal-body>
+		<div class="slds-p-around_medium">
+			<table class="slds-table slds-table_cell-buffer slds-table_bordered">
+				<thead>
+					<tr>
+						<th scope="col">Lead Field</th>
+						<th scope="col">Current Value</th>
+						<th scope="col">New Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<template for:each={updates} for:item="upd">
+						<tr key={upd.fieldApiName}>
+							<td>{upd.fieldApiName}</td>
+							<td>{upd.currentValue}</td>
+							<td>{upd.value}</td>
+						</tr>
+					</template>
+				</tbody>
+			</table>
+		</div>
+	</lightning-modal-body>
+	<lightning-modal-footer>
+		<lightning-button variant="neutral" label="Cancel" onclick={cancel}></lightning-button>
+		<lightning-button variant="brand" label="Confirm" onclick={confirmChanges}></lightning-button>
+	</lightning-modal-footer>
+</template>

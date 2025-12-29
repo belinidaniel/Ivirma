@@ -1,0 +1,50 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<template lwc:if={shouldDisplayComponent}>
+		<template lwc:if={isCardLayout}>
+			<lightning-card title={componentTitle}>
+				<div class="slds-p-horizontal_small">
+					<div class={containerClass}>
+						<template for:each={legacyData} for:item="item" lwc:if={hasLegacyData}>
+							<div key={item.Id} class={itemClass}>
+								<lightning-input
+									label={item.FieldName__c}
+									value={item.FieldValue__c}
+									readonly
+									class="slds-form-element_readonly"
+								></lightning-input>
+							</div>
+						</template>
+						<template lwc:else>
+							<div class="slds-m-around_medium">{noDataMessage}</div>
+						</template>
+						<template lwc:if={error}>
+							<div class="slds-m-around_medium">{error}</div>
+						</template>
+					</div>
+				</div>
+			</lightning-card>
+		</template>
+
+		<template lwc:elseif={isSectionLayout}>
+			<c-expandable-section collapsable label="Legacy Data">
+				<div class={containerClass}>
+					<template for:each={legacyData} for:item="item" lwc:if={hasLegacyData}>
+						<div key={item.Id} class={itemClass}>
+							<lightning-input label={item.FieldName__c} value={item.FieldValue__c} readonly class="slds-form-element_readonly"></lightning-input>
+						</div>
+					</template>
+					<template lwc:else>
+						<div class="slds-m-around_medium">{noDataMessage}</div>
+					</template>
+					<template lwc:if={error}>
+						<div class="slds-m-around_medium">{error}</div>
+					</template>
+				</div>
+			</c-expandable-section>
+		</template>
+	</template>
+</template>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <masterLabel>Dynamic Banner</masterLabel>
+    <description>Allows renderization of static or dynamic text based on current record information.</description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property
+				name="title"
+				type="String"
+				label="Title (accepts formula syntax)"
+				description="Optional. Title to be displayed in the banner. Accepts formula syntax."
+			/>
+            <property
+				name="text"
+				type="String"
+				label="Text (accepts formula syntax)"
+				description="Optional. Text to be displayed in the banner. Accepts formula syntax."
+			/>
+            <property name="backgroundColor" type="String" label="Background Color" description="Background color formatted for CSS." default="#479FDA" />
+            <property name="fontColor" type="String" label="Font Color" description="Font color formatted for CSS." default="#ffffff" />
+            <property name="fontSize" type="String" label="Font Size" description="Font size formatted for CSS." default="14px" />
+            <property
+				name="alignment"
+				type="String"
+				label="Alignment"
+				description="Alignment of the text."
+				default="center"
+				datasource="left, center, right, justify"
+			/>
+            <property name="borderStyle" type="String" label="Border style" description="Border style formatted for CSS." default="1px solid gray" />
+            <property name="borderRadius" type="String" label="Border Radius" description="Bborder radius formatted for CSS." default="20px" />
+            <property name="iconName" type="String" label="Icon" description="Accepts only SLDS icons." />
+            <property name="iconSize" type="String" label="Icon Size" description="" datasource="xx-small, x-small, small, medium, large" default="medium" />
+            <property
+				name="iconVariant"
+				type="String"
+				label="Icon Variant"
+				description="Only applicable to utility icons."
+				datasource="error, warning, success, inverse"
+				default="inverse"
+			/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

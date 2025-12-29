@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configuration object that specifies the mapping of fields from the temporary InboundLead__c records to their corresponding target fields in the standard Lead object / custom Lead Interaction Entry object.</description>
+    <label>Inbound Lead Field Mapping</label>
+    <pluralLabel>Inbound Lead Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

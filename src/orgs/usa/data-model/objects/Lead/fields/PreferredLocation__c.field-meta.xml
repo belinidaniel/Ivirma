@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreferredLocation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Preferred Location</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please make sure to select a Location Account.</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>IVIRMA Location Account</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads (Preferred Location)</relationshipLabel>
+    <relationshipName>PreferredLocationLeads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

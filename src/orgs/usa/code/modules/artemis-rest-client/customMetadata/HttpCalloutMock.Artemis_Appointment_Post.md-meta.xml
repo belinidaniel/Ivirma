@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Artemis_Appointment_Post</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">.*artemis.*/api/v1/appointment</value>
+    </values>
+    <values>
+        <field>Headers__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Methods__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>Response__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;id&quot;: &quot;1&quot;,
+  &quot;patientId&quot;: &quot;1&quot;,
+  &quot;providerId&quot;: &quot;1&quot;,
+  &quot;locationId&quot;: &quot;1&quot;,
+  &quot;appointmentType&quot;: &quot;TeleHealth&quot;,
+  &quot;appointmentStatus&quot;: &quot;Scheduled&quot;,
+  &quot;appointmentDateTime&quot;: &quot;2025-04-12T12:15:00.118Z&quot;,
+  &quot;duration&quot;: 60,
+  &quot;location&quot;: null,
+  &quot;status&quot;: null,
+  &quot;confirmationStatus&quot;: &quot;pending&quot;,
+  &quot;statusReason&quot;: null,
+  &quot;scheduledBy&quot;: &quot;Agent A&quot;,
+  &quot;scheduledDateTime&quot;: &quot;2025-04-08T12:17:38.118Z&quot;,
+  &quot;cptCode&quot;: &quot;12345&quot;
+}</value>
+    </values>
+    <values>
+        <field>StaticResource__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">OK</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonSecondaryInsuranceArtemisMetadata__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Secondary Insurance Company</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>EmrServerInsuranceCompanyMetadata__c.EmrServer__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.EmrServer__c</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>EmrServerInsuranceCompanyMetadata__c</referenceTo>
+    <relationshipLabel>Patient Server Profiles (Lead Secondary Insurance)</relationshipLabel>
+    <relationshipName>LeadSecondaryInsrncPatientServerProfiles</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

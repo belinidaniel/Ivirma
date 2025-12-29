@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OutboundRequestsRetentionPeriod__c</fullName>
+    <defaultValue>7</defaultValue>
+    <description>Defines the retention period for outbound requests in days. This setting determines how long outbound request records will be retained in the system before being automatically deleted.
+Note that a value of &apos;0&apos; or any negative number will be considered as unlimited retention, preventing automatic deletion of outbound requests.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of days to retain requests. A value of &apos;0&apos; or any negative number means unlimited retention.</inlineHelpText>
+    <label>Outbound requests retention period</label>
+    <precision>3</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

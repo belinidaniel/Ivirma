@@ -1,0 +1,18 @@
+<!--
+  @description  : Reserved availability time tracker
+  @author       : Ivo Rocha
+-->
+<template>
+	<div class="slds-m-around--small slds-grid slds-grid_align-end">
+		<template lwc:if={expired}>
+			<div class="slds-m-around--small">
+				<div class="slds-text-align_right slds-text-body_small slds-text-color_error">Slot reservation has expired</div>
+			</div>
+		</template>
+
+		<template lwc:else>
+			<div class={formattedTimeClassNames} style="margin-top: 4px">{formattedTimeRemaining}</div>
+			<lightning-helptext content="Slot reservation expires in" class="slds-m-left_xx-small"></lightning-helptext>
+		</template>
+	</div>
+</template>

@@ -1,0 +1,38 @@
+.border-fix {
+    display: block;
+    border-color: var(--slds-g-color-border-1) !important;
+}
+
+.diff-icon-position {
+    position: absolute;
+    top: 0px;
+    left: -18px;
+}
+
+.hidden-checkbox {
+    visibility: hidden;
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.custom-label {
+    margin-right: 0.5rem;
+    white-space: nowrap;
+}
+
+.hide-field-label .slds-form-element__label {
+    display: none !important;
+}
+
+.checkbox{
+    padding: 10px 0px 0px 0px;
+}
+
+.slds-size_6-of-12{
+    padding-left: 0px !important;
+    margin-left: -13px !important;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <description
+	>Cannot be set with the values of &quot;Brand&quot; Global Value Set, otherwise we might get failures if a incorrect Brand is populated in the source. Eventually and error will be thrown due to invalid Brand on Lead object, but Inbound Lead (and must) still successfully created.</description>
+    <label>Brand</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RMA</fullName>
+                <default>true</default>
+                <label>RMA</label>
+            </value>
+            <value>
+                <fullName>Boston IVF</fullName>
+                <default>false</default>
+                <label>Boston IVF</label>
+            </value>
+            <value>
+                <fullName>Pearl IVF</fullName>
+                <default>false</default>
+                <label>Pearl IVF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

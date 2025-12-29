@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Artemis_Location_List_Get</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">.*artemis.*/api/v1/location/list</value>
+    </values>
+    <values>
+        <field>Headers__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Methods__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>Response__c</field>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Boston IVF Albany Center&quot;,
+    &quot;description&quot;: &quot;Albany Center is a full-service fertility clinic.&quot;,
+    &quot;address&quot;: {
+      &quot;countryCode&quot;: &quot;US&quot;,
+      &quot;stateCode&quot;: &quot;NY&quot;,
+      &quot;city&quot;: &quot;Albany&quot;,
+      &quot;street&quot;: &quot;399 Albany Shaker Road&quot;,
+      &quot;zip&quot;: &quot;12211&quot;,
+      &quot;latitude&quot;: 0,
+      &quot;longitude&quot;: 0
+    },
+    &quot;phone&quot;: &quot;123-456-7890&quot;,
+    &quot;fax&quot;: &quot;123-456-7891&quot;,
+    &quot;isRetired&quot;: false
+  },
+
+  {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;name&quot;: &quot;Boston IVF Arizona Center&quot;,
+    &quot;description&quot;: &quot;Arizona Center is a full-service fertility clinic.&quot;,
+    &quot;address&quot;: {
+      &quot;countryCode&quot;: &quot;US&quot;,
+      &quot;stateCode&quot;: &quot;NY&quot;,
+      &quot;city&quot;: &quot;Albany&quot;,
+      &quot;street&quot;: &quot;1561 Long Pond Road&quot;,
+      &quot;zip&quot;: &quot;14626&quot;,
+      &quot;latitude&quot;: 0,
+      &quot;longitude&quot;: 0
+    },
+    &quot;phone&quot;: &quot;456-789-0123&quot;,
+    &quot;fax&quot;: &quot;456-789-0124&quot;,
+    &quot;isRetired&quot;: false
+  }
+]</value>
+    </values>
+    <values>
+        <field>StaticResource__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">OK</value>
+    </values>
+</CustomMetadata>

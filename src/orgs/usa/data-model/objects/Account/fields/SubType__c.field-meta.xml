@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubType__c</fullName>
+    <description>Specific for Organization Accounts. Indicates the sub-type of the organization.</description>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Laboratory</fullName>
+                <default>false</default>
+                <label>Laboratory</label>
+            </value>
+            <value>
+                <fullName>Medical Practice</fullName>
+                <default>false</default>
+                <label>Medical Practice</label>
+            </value>
+            <value>
+                <fullName>Clinic</fullName>
+                <default>false</default>
+                <label>Clinic</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>PR Agency</fullName>
+                <default>false</default>
+                <label>PR Agency</label>
+            </value>
+            <value>
+                <fullName>Police</fullName>
+                <default>false</default>
+                <label>Police</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Firefighters</fullName>
+                <default>false</default>
+                <label>Firefighters</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>Radio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>PR Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Center</controllingFieldValue>
+            <valueName>Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Center</controllingFieldValue>
+            <valueName>Laboratory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Center</controllingFieldValue>
+            <valueName>Medical Practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Center</controllingFieldValue>
+            <valueName>Clinic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Service</controllingFieldValue>
+            <valueName>Police</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Service</controllingFieldValue>
+            <valueName>Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Service</controllingFieldValue>
+            <valueName>Firefighters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>University</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

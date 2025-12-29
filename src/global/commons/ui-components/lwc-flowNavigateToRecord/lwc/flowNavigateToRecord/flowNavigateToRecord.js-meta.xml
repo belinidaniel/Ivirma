@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Flow - Navigate to record</masterLabel>
+    <description
+	>Navigates to a record page in a specific mode (View, Edit or Clone). Can also display a button if you don't want to navigate automatically.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="recordId" label="Record Id" type="String" role="inputOnly" required="true" description="Id of the record to navigate to." />
+            <property
+				name="mode"
+				label="Record mode"
+				type="String"
+				role="inputOnly"
+				required="true"
+				default="view"
+				datasource="view,edit,clone"
+				description="Record opening mode."
+			/>
+            <property
+				name="autoNavigate"
+				label="Auto. navigate?"
+				type="Boolean"
+				role="inputOnly"
+				default="false"
+				description="When TRUE navigates automatically to the provided record id page. When FALSE displays a button to allow user to navigate manually."
+			/>
+            <property
+				name="buttonLabel"
+				label="Button - Label"
+				type="String"
+				role="inputOnly"
+				default="Navigate"
+				description="The text to be displayed inside the button."
+			/>
+            <property
+				name="buttonTitle"
+				label="Button - Title"
+				type="String"
+				role="inputOnly"
+				default="Navigate to record"
+				description="The text to be displayed as the title of the button."
+			/>
+            <property
+				name="buttonVariant"
+				label="Button - Variant"
+				type="String"
+				role="inputOnly"
+				default="neutral"
+				description="The variant changes the appearance of the button. Accepted variants: base, neutral, brand, brand-outline, destructive, destructive-text, inverse, success"
+			/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventSelectingMetadataWithOverRef</fullName>
+    <active>true</active>
+    <description>Prevent the selection of a Referral Source Metadata&quot; record and a &quot;Overwritten Category&quot; with a &quot;Provider&quot; at the same time. Only one combination should be possible.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(EmrServerReferralSourceMetadata__c)),
+    OR(
+				    NOT(ISBLANK(TEXT(OverwrittenReferralCategory__c))),  
+		      NOT(ISBLANK(Provider__c))
+		  )
+)</errorConditionFormula>
+    <errorMessage>Please select a &quot;Referral Source Metadata&quot; record or a &quot;Overwritten Category&quot; with a &quot;Provider&quot;, but not both.</errorMessage>
+</ValidationRule>

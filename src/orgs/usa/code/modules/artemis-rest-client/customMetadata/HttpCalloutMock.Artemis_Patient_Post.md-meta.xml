@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Artemis_Patient_Post</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">.*artemis.*/api/v1/patient</value>
+    </values>
+    <values>
+        <field>Headers__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Methods__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>Response__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;id&quot;: &quot;1&quot;,
+  &quot;salutation&quot;: &quot;Mr.&quot;,
+  &quot;firstName&quot;: &quot;Marie&quot;,
+  &quot;middleName&quot;: &quot;S.&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;prefersName&quot;: &quot;Mary&quot;,
+  &quot;suffix&quot;: &quot;Jr.&quot;,
+  &quot;socialSecurityNumber&quot;: &quot;123456789&quot;,
+  &quot;dateOfBirth&quot;: &quot;2025-04-08&quot;,
+  &quot;patientType&quot;: &quot;Fertility Preservation&quot;,
+  &quot;interests&quot;: [
+    &quot;Donor Egg&quot;
+  ],
+  &quot;employer&quot;: null,
+  &quot;biologicalSex&quot;: &quot;Female&quot;,
+  &quot;genderIdentity&quot;: &quot;Female&quot;,
+  &quot;sexualOrientation&quot;: &quot;Straight or heterosexual&quot;,
+  &quot;maritalStatus&quot;: &quot;Divorced&quot;,
+  &quot;pronouns&quot;: &quot;she/her&quot;,
+  &quot;languages&quot;: [
+    &quot;English&quot;
+  ],
+  &quot;race&quot;: &quot;African American&quot;,
+  &quot;ethnicity&quot;: &quot;Hispanic&quot;,
+  &quot;address&quot;: {
+    &quot;countryCode&quot;: &quot;US&quot;,
+    &quot;stateCode&quot;: &quot;NY&quot;,
+    &quot;city&quot;: null,
+    &quot;street&quot;: null,
+    &quot;zip&quot;: null,
+    &quot;latitude&quot;: 0,
+    &quot;longitude&quot;: 0
+  },
+  &quot;phone&quot;: {
+    &quot;number&quot;: &quot;123-456-7890&quot;,
+    &quot;eligibleForTextMessaging&quot;: true,
+    &quot;eligibleForVoicemail&quot;: true
+  },
+  &quot;mobilePhone&quot;: {
+    &quot;number&quot;: &quot;123-456-7891&quot;,
+    &quot;eligibleForTextMessaging&quot;: true,
+    &quot;eligibleForVoicemail&quot;: true
+  },
+  &quot;homePhone&quot;: {
+    &quot;number&quot;: &quot;123-456-7892&quot;,
+    &quot;eligibleForTextMessaging&quot;: true,
+    &quot;eligibleForVoicemail&quot;: true
+  },
+  &quot;workPhone&quot;: {
+    &quot;number&quot;: &quot;123-456-7893&quot;,
+    &quot;eligibleForTextMessaging&quot;: true,
+    &quot;eligibleForVoicemail&quot;: true
+  },
+  &quot;email&quot;: &quot;marie_s_smith@testmail.com&quot;,
+  &quot;fax&quot;: &quot;123-456-7894&quot;,
+  &quot;additionalEmail&quot;: &quot;marie_s_smith_2@testmail.com&quot;
+}</value>
+    </values>
+    <values>
+        <field>StaticResource__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">OK</value>
+    </values>
+</CustomMetadata>

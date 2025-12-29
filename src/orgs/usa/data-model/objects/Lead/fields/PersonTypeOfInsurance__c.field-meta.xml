@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonTypeOfInsurance__c</fullName>
+    <label>Type of Insurance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Medicare / Medicaid</fullName>
+                <default>false</default>
+                <label>Medicare / Medicaid</label>
+            </value>
+            <value>
+                <fullName>No Insurance</fullName>
+                <default>false</default>
+                <label>No Insurance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

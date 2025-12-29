@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPatientAccount__c</fullName>
+    <formula>AND(
+  IsPersonAccount,
+		RecordType.DeveloperName == &apos;PatientAccount&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Patient Account</label>
+    <type>Checkbox</type>
+</CustomField>

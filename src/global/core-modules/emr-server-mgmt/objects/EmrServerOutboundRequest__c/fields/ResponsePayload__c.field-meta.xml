@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResponsePayload__c</fullName>
+    <description>Stores the HTTP response body received from the EMR Server after processing a request. This field captures the data returned by the server, including any results, errors, or messages, providing valuable information for analysis and troubleshooting.</description>
+    <label>Response Payload</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

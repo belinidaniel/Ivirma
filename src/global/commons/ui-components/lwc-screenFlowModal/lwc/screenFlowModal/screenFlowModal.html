@@ -1,0 +1,19 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<lightning-modal-header label={label}></lightning-modal-header>
+
+	<lightning-modal-body>
+		<div class="slds-is-relative">
+			<lightning-flow
+				onstatuschange={handleStatusChange}
+				flow-api-name={flowName}
+				flow-input-variables={inputVariables}
+				flow-finish-behavior={flowFinishBehaviour}
+			>
+			</lightning-flow>
+		</div>
+	</lightning-modal-body>
+</template>

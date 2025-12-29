@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShowUiAlert_PrimInsuranceNotFromServer__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(EmrServer__c)),
+				NOT(ISBLANK(PersonPrimaryInsuranceArtemisMetadata__c)),
+				EmrServer__c != PersonPrimaryInsuranceArtemisMetadata__r.EmrServer__c 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UI Alert - Prim. Insur. not from Server</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

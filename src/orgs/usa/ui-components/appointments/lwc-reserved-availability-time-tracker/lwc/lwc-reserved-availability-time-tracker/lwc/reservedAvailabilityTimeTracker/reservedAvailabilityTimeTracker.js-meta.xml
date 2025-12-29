@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Reserved Availability Time Tracker</masterLabel>
+    <description>Displays the remaining time for a reserved availability slot</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property
+				name="reservedAvailabilitySlot"
+				type="apex://ArtemisAvailabilityRestModel"
+				label="Reserved Availability Slot"
+				required="true"
+				role="inputOnly"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

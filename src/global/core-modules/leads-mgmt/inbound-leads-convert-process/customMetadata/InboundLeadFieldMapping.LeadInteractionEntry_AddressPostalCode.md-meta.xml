@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>LeadInteractionEntry - AddressPostalCode</label>
+    <protected>false</protected>
+    <values>
+        <field>InboundLeadField__c</field>
+        <value xsi:type="xsd:string">AddressPostalCode__c</value>
+    </values>
+    <values>
+        <field>InboundLeadObject__c</field>
+        <value xsi:type="xsd:string">InboundLead__c</value>
+    </values>
+    <values>
+        <field>LeadField__c</field>
+        <value xsi:type="xsd:string">Address__PostalCode__s</value>
+    </values>
+    <values>
+        <field>LeadObject__c</field>
+        <value xsi:type="xsd:string">LeadInteractionEntry__c</value>
+    </values>
+</CustomMetadata>

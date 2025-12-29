@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArtemisPatientIdFieldRequired</fullName>
+    <active>true</active>
+    <description>Field &quot;Artemis Patient Id&quot; must be required.
+Was not set as required at field level, because this field is expected to be set as read-only for all uesrs. It should be filled in automatically.</description>
+    <errorConditionFormula>ISBLANK(ArtemisPatientId__c)</errorConditionFormula>
+    <errorDisplayField>ArtemisPatientId__c</errorDisplayField>
+    <errorMessage>Artemis Patient Id is required.</errorMessage>
+</ValidationRule>

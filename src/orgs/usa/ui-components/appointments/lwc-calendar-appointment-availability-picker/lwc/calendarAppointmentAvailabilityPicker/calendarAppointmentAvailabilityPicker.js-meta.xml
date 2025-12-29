@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Calendar Appointment Availability Picker</masterLabel>
+    <description>Renders a calendar with availability slots and allows to pick one.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="availabilitySlots" type="apex://ArtemisAvailabilityRestModel[]" label="Availability Slots" role="inputOnly" />
+            <property
+				name="noSelectionErrorMessage"
+				type="String"
+				label="No Selection Error Message"
+				required="true"
+				default="Please select a slot"
+				role="inputOnly"
+			/>
+            <property name="selectedSlot" type="apex://ArtemisAvailabilityRestModel" label="Selected Availability Slot" role="outputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

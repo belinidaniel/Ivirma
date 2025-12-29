@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonInterests__c</fullName>
+    <label>Interests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Donor Egg</fullName>
+                <default>false</default>
+                <label>Donor Egg</label>
+            </value>
+            <value>
+                <fullName>Egg Freezing</fullName>
+                <default>false</default>
+                <label>Egg Freezing</label>
+            </value>
+            <value>
+                <fullName>Fertility Testing</fullName>
+                <default>false</default>
+                <label>Fertility Testing</label>
+            </value>
+            <value>
+                <fullName>IVF</fullName>
+                <default>false</default>
+                <label>IVF</label>
+            </value>
+            <value>
+                <fullName>IUI</fullName>
+                <default>false</default>
+                <label>IUI</label>
+            </value>
+            <value>
+                <fullName>LGBTQ</fullName>
+                <default>false</default>
+                <label>LGBTQ</label>
+            </value>
+            <value>
+                <fullName>Tubal Ligation/Vasectomy</fullName>
+                <default>false</default>
+                <label>Tubal Ligation/Vasectomy</label>
+            </value>
+            <value>
+                <fullName>Self Pay</fullName>
+                <default>false</default>
+                <label>Self Pay</label>
+            </value>
+            <value>
+                <fullName>Single Parent by Choice</fullName>
+                <default>false</default>
+                <label>Single Parent by Choice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

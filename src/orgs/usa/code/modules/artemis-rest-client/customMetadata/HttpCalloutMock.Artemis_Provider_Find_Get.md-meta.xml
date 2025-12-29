@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Artemis_Provider_Find_Get</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">.*artemis.*/api/v1/provider/findByNpi\?npi={{artemisProviderNpi}}</value>
+    </values>
+    <values>
+        <field>Headers__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Methods__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>Response__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;id&quot;: &quot;1&quot;,
+  &quot;firstName&quot;: &quot;Jamie&quot;,
+  &quot;lastName&quot;: &quot;Conner&quot;,
+  &quot;middleName&quot;: &quot;R&quot;,
+  &quot;suffix&quot;: null,
+  &quot;title&quot;: null,
+  &quot;npi&quot;: &quot;3456789012&quot;,
+  &quot;languages&quot;: [
+    &quot;English&quot;,
+    &quot;French&quot;
+  ],
+  &quot;medicalDegrees&quot;: [&quot;MD&quot;],
+  &quot;specialty&quot;: &quot;string&quot;,
+  &quot;address&quot;: {
+    &quot;countryCode&quot;: &quot;US&quot;,
+    &quot;stateCode&quot;: &quot;NY&quot;,
+    &quot;city&quot;: null,
+    &quot;street&quot;: null,
+    &quot;zip&quot;: null,
+    &quot;latitude&quot;: 0,
+    &quot;longitude&quot;: 0
+  },
+  &quot;email&quot;: &quot;jamie_r_conner@testmail.com&quot;,
+  &quot;additionalEmail&quot;: &quot;jamie_r_conner_2@testmail.com&quot;,
+  &quot;phone&quot;: &quot;757 757 757&quot;,
+  &quot;mobile&quot;: &quot;575 575 575&quot;,
+  &quot;fax&quot;: &quot;577 577 577&quot;
+}</value>
+    </values>
+    <values>
+        <field>StaticResource__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">OK</value>
+    </values>
+</CustomMetadata>

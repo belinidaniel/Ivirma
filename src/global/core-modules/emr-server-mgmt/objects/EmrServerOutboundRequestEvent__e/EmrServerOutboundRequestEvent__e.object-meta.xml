@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Platform Event object used to track and log each single outbound EMR REST API operations.</description>
+    <eventType>HighVolume</eventType>
+    <label>EMR Server Outbound Request Event</label>
+    <pluralLabel>EMR Server Outbound Request Events</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

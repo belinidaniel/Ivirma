@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnqualifiedReason__c</fullName>
+    <label>Unqualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplicate or test lead</fullName>
+                <default>false</default>
+                <label>Duplicate or test lead</label>
+            </value>
+            <value>
+                <fullName>No longer interested</fullName>
+                <default>false</default>
+                <label>No longer interested</label>
+            </value>
+            <value>
+                <fullName>Requested we don&apos;t contact them</fullName>
+                <default>false</default>
+                <label>Requested we don&apos;t contact them</label>
+            </value>
+            <value>
+                <fullName>Unable to contact</fullName>
+                <default>false</default>
+                <label>Unable to contact</label>
+            </value>
+            <value>
+                <fullName>Financial/Insurance issue</fullName>
+                <default>false</default>
+                <label>Financial/Insurance issue</label>
+            </value>
+            <value>
+                <fullName>Too far/distance</fullName>
+                <default>false</default>
+                <label>Too far/distance</label>
+            </value>
+            <value>
+                <fullName>Went to another clinic</fullName>
+                <default>false</default>
+                <label>Went to another clinic</label>
+            </value>
+            <value>
+                <fullName>We don&apos;t offer procedure</fullName>
+                <default>false</default>
+                <label>We don&apos;t offer procedure</label>
+            </value>
+            <value>
+                <fullName>Won&apos;t wait for appointment</fullName>
+                <default>false</default>
+                <label>Won&apos;t wait for appointment</label>
+            </value>
+            <value>
+                <fullName>Non patient inquiry</fullName>
+                <default>false</default>
+                <label>Non patient inquiry</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Duplicate or test lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>No longer interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Requested we don&apos;t contact them</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Unable to contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Financial/Insurance issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Too far/distance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Went to another clinic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>We don&apos;t offer procedure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Won&apos;t wait for appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Non patient inquiry</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

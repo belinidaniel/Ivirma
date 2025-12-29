@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Boston IVF</fullName>
+        <default>false</default>
+        <label>Boston IVF</label>
+    </customValue>
+    <customValue>
+        <fullName>RMA</fullName>
+        <default>false</default>
+        <label>RMA</label>
+    </customValue>
+    <customValue>
+        <fullName>Conceptions</fullName>
+        <default>false</default>
+        <label>Conceptions</label>
+    </customValue>
+    <customValue>
+        <fullName>Ovatures</fullName>
+        <default>false</default>
+        <label>Ovatures</label>
+    </customValue>
+    <customValue>
+        <fullName>Peak Men&apos;s</fullName>
+        <default>false</default>
+        <label>Peak Men&apos;s</label>
+    </customValue>
+    <customValue>
+        <fullName>Pearl IVF</fullName>
+        <default>false</default>
+        <label>Pearl IVF</label>
+    </customValue>
+    <description>Defines the lists of brands that are part of IVIRMA Global.</description>
+    <masterLabel>Brand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

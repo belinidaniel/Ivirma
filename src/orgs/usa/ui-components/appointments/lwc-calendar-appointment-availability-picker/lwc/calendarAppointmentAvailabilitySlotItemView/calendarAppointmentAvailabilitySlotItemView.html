@@ -1,0 +1,62 @@
+<!--
+  @description  : Calendar Appointment Availability Slot Item View
+  @author       : Ivo Rocha
+-->
+<template>
+	<article tabindex={tabIndex} class={cardClass} style="border: 1px solid var(--slds-g-color-border-1)" onclick={handleClick} onkeydown={handleKeydown}>
+		<div class="slds-card__body slds-card__body_inner">
+			<div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+				<div>
+					<h3 class="slds-text-heading_small slds-m-bottom_xx-small">
+						<lightning-formatted-date-time
+							value={availabilitySlot.startDateTime}
+							day="2-digit"
+							month="2-digit"
+							year="numeric"
+							time-zone={userTimeZone}
+						></lightning-formatted-date-time>
+						&nbsp;·&nbsp;
+						<lightning-formatted-date-time
+							value={availabilitySlot.startDateTime}
+							hour="2-digit"
+							minute="2-digit"
+							time-zone={userTimeZone}
+						></lightning-formatted-date-time>
+						&nbsp;–&nbsp;
+						<lightning-formatted-date-time
+							value={availabilitySlot.endDateTime}
+							hour="2-digit"
+							minute="2-digit"
+							time-zone={userTimeZone}
+							time-zone-name="short"
+						></lightning-formatted-date-time>
+					</h3>
+					<div class="slds-text-body_small slds-m-bottom_xx-small">
+						<lightning-badge label={availabilitySlot.appointmentType}></lightning-badge>
+						<lightning-badge label={availabilitySlot.status} class={badgeStatusClass}></lightning-badge>
+						<template lwc:if={isReserved}>
+							<lightning-helptext content={reservedBy}></lightning-helptext>
+							Expires <lightning-relative-date-time value={reservedUntil}></lightning-relative-date-time>
+						</template>
+					</div>
+					<div class="slds-text-body_small slds-p-vertical_xx-small">
+						<lightning-icon icon-name="standard:address" size="x-small" class="slds-m-right_xx-small"></lightning-icon>
+						<template lwc:if={isLocationMissingFromDatabase}>
+							<b>Location:</b>&nbsp;<span class="slds-text-color_error">Location name N/A</span>
+							<lightning-helptext content={locationMissingText} style="position: relative; top: -4px"></lightning-helptext>
+						</template>
+						<template lwc:else><b>Location:</b> {locationName}</template>
+					</div>
+					<div class="slds-text-body_small slds-p-vertical_xx-small">
+						<lightning-icon icon-name="standard:user" size="x-small" class="slds-m-right_xx-small"></lightning-icon>
+						<template lwc:if={isProviderMissingFromDatabase}>
+							<b>Provider:</b>&nbsp;<span class="slds-text-color_error">Provider name N/A</span>
+							<lightning-helptext content={providerMissingText} style="position: relative; top: -4px"></lightning-helptext>
+						</template>
+						<template lwc:else><b>Provider:</b> {providerName}</template>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</template>

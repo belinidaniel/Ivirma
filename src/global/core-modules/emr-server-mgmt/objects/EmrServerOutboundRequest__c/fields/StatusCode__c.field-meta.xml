@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusCode__c</fullName>
+    <description>Stores the HTTP status code returned by the EMR Server in response to a request. This code indicates the result of the operation, providing into whether it was successful, encountered an error, or required additional action.</description>
+    <externalId>false</externalId>
+    <label>Status code</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

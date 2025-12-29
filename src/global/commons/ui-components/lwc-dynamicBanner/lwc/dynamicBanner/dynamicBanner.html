@@ -1,0 +1,19 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<div class="dynamic-banner slds-box">
+		<div>
+			<template if:true={hasIcon}>
+				<lightning-icon variant={iconVariant} icon-name={iconName} size={iconSize}></lightning-icon>
+			</template>
+			<template if:true={processedTitle}>
+				<h1><lightning-formatted-rich-text value={processedTitle}></lightning-formatted-rich-text></h1>
+			</template>
+			<template if:true={processedText}>
+				<lightning-formatted-rich-text value={processedText}></lightning-formatted-rich-text>
+			</template>
+		</div>
+	</div>
+</template>

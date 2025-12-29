@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonPatientType__c</fullName>
+    <label>Patient Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Infertility</fullName>
+                <default>false</default>
+                <label>General Infertility</label>
+            </value>
+            <value>
+                <fullName>Fertility Preservation</fullName>
+                <default>false</default>
+                <label>Fertility Preservation</label>
+            </value>
+            <value>
+                <fullName>Registered in WinMed</fullName>
+                <default>false</default>
+                <label>Registered in WinMed</label>
+            </value>
+            <value>
+                <fullName>Donor</fullName>
+                <default>false</default>
+                <label>Donor</label>
+            </value>
+            <value>
+                <fullName>GC Recipient</fullName>
+                <default>false</default>
+                <label>GC Recipient</label>
+            </value>
+            <value>
+                <fullName>GYN Only</fullName>
+                <default>false</default>
+                <label>GYN Only</label>
+            </value>
+            <value>
+                <fullName>Monitoring Only</fullName>
+                <default>false</default>
+                <label>Monitoring Only</label>
+            </value>
+            <value>
+                <fullName>Infertility</fullName>
+                <default>false</default>
+                <label>Infertility</label>
+            </value>
+            <value>
+                <fullName>Valerie Fund Patient</fullName>
+                <default>false</default>
+                <label>Valerie Fund Patient</label>
+            </value>
+            <value>
+                <fullName>LMN Owned</fullName>
+                <default>false</default>
+                <label>LMN Owned</label>
+            </value>
+            <value>
+                <fullName>LER Owned</fullName>
+                <default>false</default>
+                <label>LER Owned</label>
+            </value>
+            <value>
+                <fullName>Former IVFNJ</fullName>
+                <default>false</default>
+                <label>Former IVFNJ</label>
+            </value>
+            <value>
+                <fullName>Nutrition Counsel Only</fullName>
+                <default>false</default>
+                <label>Nutrition Counsel Only</label>
+            </value>
+            <value>
+                <fullName>International Patient</fullName>
+                <default>false</default>
+                <label>International Patient</label>
+            </value>
+            <value>
+                <fullName>Urology</fullName>
+                <default>false</default>
+                <label>Urology</label>
+            </value>
+            <value>
+                <fullName>Cancer Patient</fullName>
+                <default>false</default>
+                <label>Cancer Patient</label>
+            </value>
+            <value>
+                <fullName>Patient Inquiry</fullName>
+                <default>false</default>
+                <label>Patient Inquiry</label>
+            </value>
+            <value>
+                <fullName>Patient Portal</fullName>
+                <default>false</default>
+                <label>Patient Portal</label>
+            </value>
+            <value>
+                <fullName>Referral Patient</fullName>
+                <default>false</default>
+                <label>Referral Patient</label>
+            </value>
+            <value>
+                <fullName>Directed Sperm Donor</fullName>
+                <default>false</default>
+                <label>Directed Sperm Donor</label>
+            </value>
+            <value>
+                <fullName>Intended Parent</fullName>
+                <default>false</default>
+                <label>Intended Parent</label>
+            </value>
+            <value>
+                <fullName>GC Recipient Partner</fullName>
+                <default>false</default>
+                <label>GC Recipient Partner</label>
+            </value>
+            <value>
+                <fullName>FPE-Physician in Training</fullName>
+                <default>false</default>
+                <label>FPE-Physician in Training</label>
+            </value>
+            <value>
+                <fullName>Non-Tech Patient</fullName>
+                <default>false</default>
+                <label>Non-Tech Patient</label>
+            </value>
+            <value>
+                <fullName>Abandoned Patient</fullName>
+                <default>false</default>
+                <label>Abandoned Patient</label>
+            </value>
+            <value>
+                <fullName>Endocrine</fullName>
+                <default>false</default>
+                <label>Endocrine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

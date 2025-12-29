@@ -1,0 +1,48 @@
+<!--
+  @description  : Calendar Appointment Availability Picker
+  @author       : Ivo Rocha
+-->
+<template>
+	<template lwc:if={hasNoData}>
+		<c-empty-state
+			illustration="desert"
+			header="No availabilities found"
+			description="Try adjusting your search criteria or filter options to find what you're looking for."
+		></c-empty-state>
+	</template>
+
+	<template lwc:else>
+		<div class="slds-grid slds-p-horizontal_xx-small">
+			<div>
+				<!-- Calendar -->
+				<c-vanilla-calendar-pro options={calendarOptions} lwc:ref="calendar" style="align-self: start"></c-vanilla-calendar-pro>
+
+				<!-- Error messages bellow the calendar -->
+				<div class="slds-m-vertical_small">
+					<div if:true={internalErrorMessageToRender} class="slds-text-color_error slds-m-vertical_small">{internalErrorMessageToRender}</div>
+					<div if:true={flowErrorMessageToRender} class="slds-m-vertical_small">
+						<lightning-formatted-rich-text disable-linkify value={flowErrorMessageToRender}></lightning-formatted-rich-text>
+					</div>
+				</div>
+			</div>
+
+			<!-- Selected day availability slots -->
+			<div class="selected-day-availability-slots slds-p-left_small" style="flex-grow: 1">
+				<template lwc:if={selectedDate}>
+					<div class="slds-scrollable_y" style="max-height: 50rem">
+						<template for:each={selectedDateAvailabilitySlots} for:item="slot">
+							<c-calendar-appointment-availability-slot-item-view
+								key={slot.id}
+								availability-slot={slot}
+								onselect={handleSlotSelected}
+							></c-calendar-appointment-availability-slot-item-view>
+						</template>
+					</div>
+				</template>
+				<template lwc:else>
+					<c-empty-state illustration="setup" header="Select a date" description="Please select a date to view availability slots."></c-empty-state>
+				</template>
+			</div>
+		</div>
+	</template>
+</template>

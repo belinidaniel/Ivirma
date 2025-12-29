@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>New patient appointment flow</description>
+    <flowDefinition>ScreenFlow_NewPatientAppointment</flowDefinition>
+    <label>New Appointment</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

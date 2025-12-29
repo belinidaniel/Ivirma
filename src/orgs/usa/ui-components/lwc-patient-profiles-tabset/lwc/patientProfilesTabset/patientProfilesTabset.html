@@ -1,0 +1,43 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<template lwc:if={hasLoadedData}>
+		<template lwc:if={isPersonAccount}>
+			<tempplate lwc:if={hasServerProfiles}>
+				<lightning-tabset active-tab-value={selectedTabId}>
+					<template for:each={profileServerRecords} for:item="profileServerRecord">
+						<lightning-tab key={profileServerRecord.id} value={profileServerRecord.id} label={profileServerRecord.fields.EmrServer__r.displayValue}>
+							<c-patient-profile-record-layout record-id={profileServerRecord.id} default-mode="view"></c-patient-profile-record-layout>
+						</lightning-tab>
+					</template>
+					<lightning-tab label="➕" value="new">
+						<c-empty-state
+							header="New Server"
+							description="Sync this patient with a new server."
+							illustration="connection"
+							button-label="Create sync"
+							onbuttonclick={handleCreateSyncClick}
+						></c-empty-state>
+					</lightning-tab>
+				</lightning-tabset>
+			</tempplate>
+			<template lwc:else>
+				<c-empty-state
+					header="No Server Profiles"
+					description="This patient is not yet in sync with any server."
+					illustration="connection"
+					button-label="Create sync"
+					onbuttonclick={handleCreateSyncClick}
+				></c-empty-state>
+			</template>
+		</template>
+		<template lwc:else>
+			<c-empty-state header="Not a Patient account" description="This account is not a Patient account." illustration="walkthrough"></c-empty-state>
+		</template>
+	</template>
+	<template lwc:else>
+		<lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+	</template>
+</template>

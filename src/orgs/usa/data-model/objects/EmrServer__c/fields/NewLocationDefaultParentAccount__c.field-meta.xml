@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewLocationDefaultParentAccount__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Only applicable to new Locations.</inlineHelpText>
+    <label>Default Parent Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>EMR Servers</relationshipLabel>
+    <relationshipName>EmrServerLocationDefaultParentAccounts</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Artemis_Availability_Search_Get</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">.*artemis.*/api/v1/availability/search\?.*</value>
+    </values>
+    <values>
+        <field>Headers__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Methods__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>Response__c</field>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;providerId&quot;: &quot;1&quot;,
+    &quot;locationId&quot;: &quot;1&quot;,
+    &quot;startDateTime&quot;: &quot;2025-05-08T12:00:00.000Z&quot;,
+    &quot;endDateTime&quot;: &quot;2025-05-08T13:00:00.000Z&quot;,
+    &quot;appointmentType&quot;: &quot;TeleHealth&quot;,
+    &quot;status&quot;: &quot;free&quot;,
+    &quot;reservedBy&quot;: null,
+    &quot;reservedUntil&quot;: null
+  },{
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;providerId&quot;: &quot;1&quot;,
+    &quot;locationId&quot;: &quot;1&quot;,
+    &quot;startDateTime&quot;: &quot;2025-05-08T14:00:00.000Z&quot;,
+    &quot;endDateTime&quot;: &quot;2025-05-08T15:00:00.000Z&quot;,
+    &quot;appointmentType&quot;: &quot;TeleHealth&quot;,
+    &quot;status&quot;: &quot;reserved&quot;,
+    &quot;reservedBy&quot;: &quot;Test Agent&quot;,
+    &quot;reservedUntil&quot;: &quot;2025-04-08T13:58:40.000Z&quot;
+  }
+]</value>
+    </values>
+    <values>
+        <field>StaticResource__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">OK</value>
+    </values>
+</CustomMetadata>

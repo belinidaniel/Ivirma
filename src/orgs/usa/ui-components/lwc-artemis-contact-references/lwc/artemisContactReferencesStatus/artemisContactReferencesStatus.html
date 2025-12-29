@@ -1,0 +1,24 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<lightning-card title={componentTitle} icon-name={componentIcon}>
+		<lightning-button-icon alternative-text="Refresh" icon-name="utility:refresh" slot="actions" onclick={handleRefreshButtonClick}></lightning-button-icon>
+
+		<template if:true={contactReferences}>
+			<lightning-datatable
+				key-field="id"
+				data={contactReferences}
+				columns={columns}
+				hide-checkbox-column
+				resize-column-disabled
+				onrowaction={handleRowAction}
+			>
+			</lightning-datatable>
+		</template>
+		<template if:true={error}> {error} </template>
+
+		<!-- <p slot="footer">Card Footer</p> -->
+	</lightning-card>
+</template>

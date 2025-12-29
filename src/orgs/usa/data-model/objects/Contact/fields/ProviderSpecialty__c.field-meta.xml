@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProviderSpecialty__c</fullName>
+    <label>Specialty</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allergy/immunology</fullName>
+                <default>false</default>
+                <label>Allergy/immunology</label>
+            </value>
+            <value>
+                <fullName>Anesthesiology</fullName>
+                <default>false</default>
+                <label>Anesthesiology</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular Disease</fullName>
+                <default>false</default>
+                <label>Cardiovascular Disease</label>
+            </value>
+            <value>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+                <label>Dermatology</label>
+            </value>
+            <value>
+                <fullName>Endocrinology</fullName>
+                <default>false</default>
+                <label>Endocrinology</label>
+            </value>
+            <value>
+                <fullName>Family Practice</fullName>
+                <default>false</default>
+                <label>Family Practice</label>
+            </value>
+            <value>
+                <fullName>Gastroenterology</fullName>
+                <default>false</default>
+                <label>Gastroenterology</label>
+            </value>
+            <value>
+                <fullName>General Practice</fullName>
+                <default>false</default>
+                <label>General Practice</label>
+            </value>
+            <value>
+                <fullName>Genetic Counselor</fullName>
+                <default>false</default>
+                <label>Genetic Counselor</label>
+            </value>
+            <value>
+                <fullName>Gynecology/oncology</fullName>
+                <default>false</default>
+                <label>Gynecology/oncology</label>
+            </value>
+            <value>
+                <fullName>Hematology/oncology</fullName>
+                <default>false</default>
+                <label>Hematology/oncology</label>
+            </value>
+            <value>
+                <fullName>Infectious Disease</fullName>
+                <default>false</default>
+                <label>Infectious Disease</label>
+            </value>
+            <value>
+                <fullName>Internal Medicine, General</fullName>
+                <default>false</default>
+                <label>Internal Medicine, General</label>
+            </value>
+            <value>
+                <fullName>Maternal And Fetal Medicine</fullName>
+                <default>false</default>
+                <label>Maternal And Fetal Medicine</label>
+            </value>
+            <value>
+                <fullName>Medical Oncology</fullName>
+                <default>false</default>
+                <label>Medical Oncology</label>
+            </value>
+            <value>
+                <fullName>Midwife</fullName>
+                <default>false</default>
+                <label>Midwife</label>
+            </value>
+            <value>
+                <fullName>Nephrology</fullName>
+                <default>false</default>
+                <label>Nephrology</label>
+            </value>
+            <value>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+                <label>Neurology</label>
+            </value>
+            <value>
+                <fullName>Nuclear Medicine</fullName>
+                <default>false</default>
+                <label>Nuclear Medicine</label>
+            </value>
+            <value>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+                <label>Nurse Practitioner</label>
+            </value>
+            <value>
+                <fullName>Obstetrics/gynecology</fullName>
+                <default>false</default>
+                <label>Obstetrics/gynecology</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Orthopedic Surgery</fullName>
+                <default>false</default>
+                <label>Orthopedic Surgery</label>
+            </value>
+            <value>
+                <fullName>Pediatrics</fullName>
+                <default>false</default>
+                <label>Pediatrics</label>
+            </value>
+            <value>
+                <fullName>Physician&apos;s Assistant</fullName>
+                <default>false</default>
+                <label>Physician&apos;s Assistant</label>
+            </value>
+            <value>
+                <fullName>Psychiatry</fullName>
+                <default>false</default>
+                <label>Psychiatry</label>
+            </value>
+            <value>
+                <fullName>Pulmonary Disease</fullName>
+                <default>false</default>
+                <label>Pulmonary Disease</label>
+            </value>
+            <value>
+                <fullName>Radiation Oncology</fullName>
+                <default>false</default>
+                <label>Radiation Oncology</label>
+            </value>
+            <value>
+                <fullName>Radiology</fullName>
+                <default>false</default>
+                <label>Radiology</label>
+            </value>
+            <value>
+                <fullName>Reproductive Endocrinologist</fullName>
+                <default>false</default>
+                <label>Reproductive Endocrinologist</label>
+            </value>
+            <value>
+                <fullName>Rheumatology</fullName>
+                <default>false</default>
+                <label>Rheumatology</label>
+            </value>
+            <value>
+                <fullName>Surgical Oncology</fullName>
+                <default>false</default>
+                <label>Surgical Oncology</label>
+            </value>
+            <value>
+                <fullName>Unspecified</fullName>
+                <default>false</default>
+                <label>Unspecified</label>
+            </value>
+            <value>
+                <fullName>Urogynecology</fullName>
+                <default>false</default>
+                <label>Urogynecology</label>
+            </value>
+            <value>
+                <fullName>Urology</fullName>
+                <default>false</default>
+                <label>Urology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

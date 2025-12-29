@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PatientRequestedPatientAdvocate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Specific for Patient Accounts. Indicates if the patient requested a patient advocate.</description>
+    <label>Requested Patient Advocate</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

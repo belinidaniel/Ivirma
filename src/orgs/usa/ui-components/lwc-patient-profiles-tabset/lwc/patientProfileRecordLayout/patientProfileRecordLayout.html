@@ -1,0 +1,133 @@
+<!--
+  @description  : 
+  @author       : Ivo Rocha
+-->
+<template>
+	<template lwc:if={hasLoadedLayoutMetadata}>
+		<template if:true={isSaving}>
+			<lightning-spinner alternative-text="Saving" size="medium"></lightning-spinner>
+		</template>
+		<template if:true={isLoading}>
+			<lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+		</template>
+
+		<!-- Edit Mode-->
+		<template lwc:if={inEditMode}>
+			<!-- Layout -->
+			<lightning-record-edit-form
+				object-api-name="PatientServerProfile__c"
+				record-id={recordId}
+				onsuccess={handleEditSuccess}
+				onerror={handleEditError}
+				onsubmit={handleEditSubmit}
+			>
+				<template for:each={layoutEditModeMetadata.sections} for:item="section">
+					<c-expandable-section key={section.id} id={section.id} label={section.heading} collapsable={section.collapsible}>
+						<div class="slds-grid slds-wrap">
+							<template for:each={section.layoutRows} for:item="layoutRow">
+								<template for:each={layoutRow.layoutItems} for:item="layoutItem">
+									<div key={layoutItem.lookupIdApiName} class="slds-col slds-size_1-of-2 slds-has-flexi-truncate">
+										<template for:each={layoutItem.layoutComponents} for:item="layoutComponent">
+											<template lwc:if={layoutComponent.apiName}>
+												<div
+													key={layoutComponent.apiName}
+													class="slds-form-element_small slds-form-element_edit slds-hint-parent slds-form-element slds-form-element_stacked"
+												>
+													<template lwc:if={layoutItem.editableForUpdate}>
+														<lightning-input-field field-name={layoutComponent.apiName}></lightning-input-field>
+													</template>
+													<template lwc:else>
+														<lightning-output-field
+															field-name={layoutComponent.apiName}
+															variant="standard"
+														></lightning-output-field>
+													</template>
+												</div>
+											</template>
+											<template lwc:else>
+												<!-- empty space -->
+												<div key={layoutComponent.apiName} class="slds-form__item slds-no-space slds-size_1-of-2 empty-cell"></div>
+											</template>
+										</template>
+									</div>
+								</template>
+							</template>
+						</div>
+					</c-expandable-section>
+				</template>
+
+				<!-- Footer buttons -->
+				<div class="slds-docked-form-footer" style="position: -webkit-sticky; position: sticky; bottom: 40px">
+					<lightning-button-group>
+						<lightning-button class="slds-button-group-item" label="Cancel" onclick={handleEditCancelClick}></lightning-button>
+						<lightning-button class="slds-button-group-item" variant="brand" type="submit" label="Save"> </lightning-button>
+					</lightning-button-group>
+				</div>
+			</lightning-record-edit-form>
+		</template>
+
+		<!-- View mode-->
+		<template lwc:else>
+			<!-- Header buttons -->
+			<div class="slds-grid slds-grid_reverse">
+				<lightning-button-group>
+					<lightning-button label="Edit" onclick={handleEditRecordClick}></lightning-button>
+					<lightning-button-menu alternative-text="Show menu" variant="border-filled" onselect={handleOnselectHeaderAction}>
+						<lightning-menu-item label="Refresh" value="refresh" prefix-icon-name="utility:refresh" disabled></lightning-menu-item>
+						<lightning-menu-item label="View history" value="view-history" prefix-icon-name="utility:date_time"></lightning-menu-item>
+						<lightning-menu-item label="Force pull" value="force-pull" prefix-icon-name="utility:arrowdown" disabled></lightning-menu-item>
+						<lightning-menu-item label="Force push" value="force-push" prefix-icon-name="utility:arrowup" disabled></lightning-menu-item>
+						<lightning-menu-item label="Compare" value="compare" prefix-icon-name="utility:snippet" disabled></lightning-menu-item>
+						<!-- http://incaseofstairs.com/jsdiff/ diffWords(oldStr, newStr[, options]) -->
+					</lightning-button-menu>
+				</lightning-button-group>
+			</div>
+
+			<!-- Layout -->
+			<lightning-record-view-form object-api-name="PatientServerProfile__c" record-id={recordId} onload={handleRecordViewLoad}>
+				<template for:each={layoutViewModeMetadata.sections} for:item="section">
+					<c-expandable-section key={section.id} id={section.id} label={section.heading} collapsable={section.collapsible}>
+						<div class="slds-grid slds-wrap">
+							<template for:each={section.layoutRows} for:item="layoutRow">
+								<template for:each={layoutRow.layoutItems} for:item="layoutItem">
+									<div key={layoutItem.lookupIdApiName} class="slds-col slds-size_1-of-2 slds-has-flexi-truncate">
+										<template for:each={layoutItem.layoutComponents} for:item="layoutComponent">
+											<template lwc:if={layoutComponent.apiName}>
+												<div
+													key={layoutComponent.apiName}
+													class="slds-form-element_small slds-form-element_edit slds-hint-parent slds-form-element slds-form-element_stacked"
+												>
+													<lightning-output-field
+														field-name={layoutComponent.apiName}
+														class="slds-border_bottom slds-form-element__static slds-form-element"
+														variant="standard"
+													></lightning-output-field>
+													<template lwc:if={layoutItem.editableForUpdate}>
+														<lightning-button-icon
+															icon-name="utility:edit"
+															alternative-text="Edit"
+															title="Edit"
+															variant="bare"
+															onclick={handleEditRecordClick}
+														></lightning-button-icon>
+													</template>
+												</div>
+											</template>
+											<template lwc:else>
+												<!-- empty space -->
+												<div key={layoutComponent.apiName} class="slds-form__item slds-no-space slds-size_1-of-2 empty-cell"></div>
+											</template>
+										</template>
+									</div>
+								</template>
+							</template>
+						</div>
+					</c-expandable-section>
+				</template>
+			</lightning-record-view-form>
+
+			<!-- Legacy data records displayer -->
+			<c-legacy-data-display record-id={recordId} layout-columns="two" layout-type="section" hide-if-no-data></c-legacy-data-display>
+		</template>
+	</template>
+</template>

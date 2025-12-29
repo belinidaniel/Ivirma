@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShowUiAlert_LocationNotFromBrand__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(PreferredLocation__c)),
+	   NOT(ISBLANK(TEXT(Brand__c))),
+				TEXT(PreferredLocation__r.LocationBrand__c) &lt;&gt;	TEXT(Brand__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UI Alert - Show Location Not From Brand</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

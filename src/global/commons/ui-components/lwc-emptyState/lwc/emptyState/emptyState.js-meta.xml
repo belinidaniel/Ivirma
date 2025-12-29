@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Empty State</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+      </targets>
+      <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+          <property
+				label="Illustration"
+				name="illustration"
+				type="String"
+				description="Choose illustration from the list."
+				datasource="desert, road, access, event, lake, camping, maintenance, connection, lightning, page, walkthrough, task, fishing, fishing2, setup, access2, content, preview, nopreview, research"
+			/>
+          <property label="Header" name="header" type="String" default="Header" description="Choose header text." />
+          <property label="Description" name="description" type="String" default="Description" description="Choose description text." />
+          <property label="Button Label" name="buttonLabel" type="String" description="Choose button label." />
+          <property label="Link Label" name="linkLabel" type="String" description="Choose link label." />
+          <property label="Button Icon" name="buttonIcon" type="String" description="Choose button icon." />
+          <property label="Greyscale" name="greyscale" type="Boolean" default="false" description="Choose if the illustration should be greyscale." />
+        </targetConfig>
+        <targetConfig targets="lightning__FlowScreen">
+          <property
+				label="Illustration"
+				name="illustration"
+				type="String"
+				default="desert"
+				description="Possible values: desert, road, access, event, lake, camping, maintenance, connection, lightning, page, walkthrough, task, fishing, fishing2, setup, access2, content, preview, nopreview, research"
+			/>
+          <property label="Header" name="header" type="String" default="Header" description="Choose header text." />
+          <property label="Description" name="description" type="String" default="Description" description="Choose description text." />
+          <property label="Button Label" name="buttonLabel" type="String" description="Choose button label." />
+          <property label="Link Label" name="linkLabel" type="String" description="Choose link label." />
+          <property label="Button Icon" name="buttonIcon" type="String" description="Choose button icon." />
+          <property label="Greyscale" name="greyscale" type="Boolean" default="false" description="Choose if the illustration should be greyscale." />
+        </targetConfig>
+      </targetConfigs>
+</LightningComponentBundle>

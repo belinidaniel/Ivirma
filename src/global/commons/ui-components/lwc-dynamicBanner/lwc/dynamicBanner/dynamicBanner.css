@@ -1,0 +1,16 @@
+.dynamic-banner {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-text {
+    margin-left: 5px;
+}
+
+
+h1 {
+    font-size: larger;
+    font-weight: bolder;
+}

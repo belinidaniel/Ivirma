@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_type_field_Append</fullName>
+    <active>true</active>
+    <description>Validation to ensure 'append' or 'append with header info' merge behavior is only applied to fields of type 'string' or 'textarea'.</description>
+    <errorConditionFormula>AND(
+				OR(
+       LeadField__r.DataType != &apos;string&apos;,
+								LeadField__r.DataType != &apos;textarea&apos;
+    ),
+				OR(
+						ISPICKVAL(MergeBehaviour__c, &apos;append_with_headerinfo&apos;), 
+						ISPICKVAL(MergeBehaviour__c, &apos;append&apos;)
+				)
+)</errorConditionFormula>
+    <errorMessage>append or append with header info is allow only to Text field</errorMessage>
+</ValidationRule>

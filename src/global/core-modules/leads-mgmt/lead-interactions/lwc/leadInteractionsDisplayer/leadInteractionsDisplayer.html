@@ -1,0 +1,57 @@
+<!--
+  @description       : 
+  @author            : Daniel Belini
+  @last modified on  : 04-21-2025
+  @last modified by  : Daniel Belini
+-->
+<template>
+	<template if:true={isLoading}>
+		<lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+	</template>
+
+	<lightning-card title={cardTitle} icon-name="custom:custom63" class="slds-card_boundary border-fix">
+		<lightning-button label="Apply selection(s) to Lead" slot="actions" onclick={handleApplySelections} disabled={isApplyButtonDisabled}>
+		</lightning-button>
+
+		<template if:true={interactionsData}>
+			<template if:true={interactionsData.length}>
+				<template for:each={interactionsData} for:item="interaction">
+					<c-expandable-section key={interaction.id} collapsable initial-state={interaction.expandableSectionInitialState} class="expandable-section">
+						<span slot="header">
+							{interaction.source} - <lightning-relative-date-time value={interaction.toISOString}></lightning-relative-date-time>
+						</span>
+						<lightning-record-view-form object-api-name="LeadInteractionEntry__c" record-id={interaction.id}>
+							<lightning-layout multiple-rows wrap horizontal-align="spread" vertical-align="start">
+								<template for:each={interaction.values} for:item="value">
+									<lightning-layout-item key={value.fieldApiName} size="6">
+										<div style="display: flex">
+											<div class={value.showCheckbox}>
+												<lightning-input
+													type="checkbox"
+													class="slds-m-left_small"
+													id="checkbox"
+													data-field={value.fieldApiName}
+													data-interaction-id={interaction.id}
+													data-field-lead={value.leadFieldApiName}
+													data-unique-key={value.uniqueKey}
+													onchange={handleCheckboxChange}
+													variant="label-hidden"
+												>
+												</lightning-input>
+											</div>
+											<lightning-output-field field-name={value.fieldApiName} class="slds-form-element_readonly">
+											</lightning-output-field>
+										</div>
+									</lightning-layout-item>
+								</template>
+							</lightning-layout>
+						</lightning-record-view-form>
+					</c-expandable-section>
+				</template>
+			</template>
+			<template if:false={interactionsData.length}>
+				<p class="slds-p-around_medium">No Lead Interactions found</p>
+			</template>
+		</template>
+	</lightning-card>
+</template>

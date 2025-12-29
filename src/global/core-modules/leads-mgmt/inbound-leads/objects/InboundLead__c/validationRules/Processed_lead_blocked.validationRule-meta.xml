@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Processed_lead_blocked</fullName>
+    <active>true</active>
+    <description>Block any modification from being made on an already processed Inbound Lead.</description>
+    <errorConditionFormula>AND(NOT(ISNEW()), ISPICKVAL(PRIORVALUE(ProcessingStatus__c), &apos;Processed&apos;))</errorConditionFormula>
+    <errorMessage>This Inbound Lead has already been processed. No further modifications are allowed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventHavingLeadAndPatient</fullName>
+    <active>true</active>
+    <description>Prevent having this Referral Source linked to a Lead and a Patient at the same time.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Lead__c)),
+				NOT(ISBLANK(Patient__c))
+)</errorConditionFormula>
+    <errorMessage>A Referral Source can either be linked to a Patient or a Lead but not both.</errorMessage>
+</ValidationRule>

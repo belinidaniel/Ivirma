@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShowUiAlert_EmrServerNotLinkedToLocation__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(EmrServer__c)),
+				NOT(ISBLANK(PreferredLocation__c)),
+				NOT(ISBLANK(PreferredLocation__r.LocationEmrServer__c)),
+				PreferredLocation__r.LocationEmrServer__c &lt;&gt; EmrServer__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UI Alert - Show Server not from Location</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PatientAccount</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>PatientAccountCompactLayout</compactLayoutAssignment>
+    <label>Patient Account</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MedicalDegree__pc</picklist>
+        <values>
+            <fullName>ANP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APRN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FNP-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LICSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NP-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PhD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPA-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WHNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WHNP-BC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonEthnicity__pc</picklist>
+        <values>
+            <fullName>American Indian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Indian%2FAlaska Native</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian non-Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asked but unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black non-Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black%2FAfrican American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hispanic%2FLatino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian%2FOther Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Asked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%2C please specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused%2FChoose not to disclose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White non-Hispanic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White%2FCaucasian</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonInterests__pc</picklist>
+        <values>
+            <fullName>Donor Egg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egg Freezing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fertility Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IVF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LGBTQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Parent by Choice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tubal Ligation%2FVasectomy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonLanguage__pc</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bengali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gujarati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hmong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telugu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnamese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonMaritalStatus__pc</picklist>
+        <values>
+            <fullName>Divorced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Married</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widowed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonPatientType__pc</picklist>
+        <values>
+            <fullName>Abandoned Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directed Sperm Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endocrine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FPE-Physician in Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fertility Preservation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former IVFNJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC Recipient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC Recipient Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GYN Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Infertility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infertility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intended Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LER Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMN Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tech Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutrition Counsel Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered in WinMed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valerie Fund Patient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonPrimaryInsuranceCompany__pc</picklist>
+        <values>
+            <fullName>Aetna 1199SEIU Benefit Payer ID 13162</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aetna Meritain Health Payer ID 41124</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aetna POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthem BCBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Mass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BCBS OUT OF STATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS OUT OF REGION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDPHP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCELLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCELLUS ESSENTIAL PLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excellus Medicaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEHA Insurance %28Aetna%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GHI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIGHMARK BSNENY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIGHMARK BSNENY FEDERAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KindBody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LABCORP %2365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NYS EMPIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need insurance info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Progyny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRICARE Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tricare Prime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tricare Reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC Community Plan %28Medicaid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC Fertility Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC GEHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMR ID 39026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unitedhealthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Univera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA CCN OPTUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIN Premier Fertility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonPrimaryInsuranceSubscriber__pc</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same as Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same as Patient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonRace__pc</picklist>
+        <values>
+            <fullName>African American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Indian %2F Alaska Native</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Indian or Alaska Native</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asked but unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black or African-American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caucasian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Choose not to disclose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hispanic or Latino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More Than One Race</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Pacific Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%2C please specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonSecondaryInsuranceCompany__pc</picklist>
+        <values>
+            <fullName>Aetna 1199SEIU Benefit Payer ID 13162</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aetna Meritain Health Payer ID 41124</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aetna POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthem BCBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Mass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BCBS OUT OF STATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS OUT OF REGION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDPHP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCELLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCELLUS ESSENTIAL PLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excellus Medicaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEHA Insurance %28Aetna%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GHI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIGHMARK BSNENY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIGHMARK BSNENY FEDERAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KindBody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LABCORP %2365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NYS EMPIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need insurance info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Progyny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRICARE Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tricare Prime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tricare Reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC Community Plan %28Medicaid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC Fertility Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHC GEHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMR ID 39026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unitedhealthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Univera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA CCN OPTUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIN Premier Fertility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonSecondaryInsuranceSubscriber__pc</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same as Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same as Patient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PersonTypeOfInsurance__pc</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicare %2F Medicaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Insurance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProviderSpecialty__pc</picklist>
+        <values>
+            <fullName>Allergy%2Fimmunology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anesthesiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiovascular Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dermatology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endocrinology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gastroenterology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genetic Counselor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gynecology%2Foncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hematology%2Foncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infectious Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Medicine%2C General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maternal And Fetal Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nephrology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neurology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse Practitioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obstetrics%2Fgynecology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophthalmology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orthopedic Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pediatrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician%27s Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychiatry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulmonary Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiation Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reproductive Endocrinologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rheumatology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgical Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unspecified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urogynecology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urology</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProviderStaffLanguage__pc</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bengali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gujarati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hmong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telugu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnamese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubType__c</picklist>
+        <values>
+            <fullName>Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firefighters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

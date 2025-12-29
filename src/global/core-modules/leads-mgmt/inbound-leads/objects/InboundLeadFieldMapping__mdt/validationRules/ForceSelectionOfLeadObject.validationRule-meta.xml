@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ForceSelectionOfLeadObject</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(LeadObject__r.DeveloperName != &apos;Lead&apos;, LeadObject__r.DeveloperName != &apos;LeadInteractionEntry&apos;)</errorConditionFormula>
+    <errorDisplayField>LeadObject__c</errorDisplayField>
+    <errorMessage>Please make sure you select &quot;Lead&quot; or &quot;Lead Interaction Entry&quot;object.</errorMessage>
+</ValidationRule>

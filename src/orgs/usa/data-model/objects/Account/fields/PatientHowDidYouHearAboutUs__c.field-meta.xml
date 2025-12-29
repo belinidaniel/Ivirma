@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PatientHowDidYouHearAboutUs__c</fullName>
+    <description>Specific for Patient Accounts. Indicates the method by which the patient heard about us.</description>
+    <label>How did you hear about us?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Google Search</fullName>
+                <default>false</default>
+                <label>Google Search</label>
+            </value>
+            <value>
+                <fullName>Friend/Relative</fullName>
+                <default>false</default>
+                <label>Friend/Relative</label>
+            </value>
+            <value>
+                <fullName>Insurance Carrier</fullName>
+                <default>false</default>
+                <label>Insurance Carrier</label>
+            </value>
+            <value>
+                <fullName>Facebook/Instagram</fullName>
+                <default>false</default>
+                <label>Facebook/Instagram</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Television</fullName>
+                <default>false</default>
+                <label>Television</label>
+            </value>
+            <value>
+                <fullName>Therapist</fullName>
+                <default>false</default>
+                <label>Therapist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

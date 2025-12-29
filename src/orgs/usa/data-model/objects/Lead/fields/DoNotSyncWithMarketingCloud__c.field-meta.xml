@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoNotSyncWithMarketingCloud__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If checked, Lead won&apos;t be synchronized with Marketing Cloud.</inlineHelpText>
+    <label>Do not sync with Marteking Cloud</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

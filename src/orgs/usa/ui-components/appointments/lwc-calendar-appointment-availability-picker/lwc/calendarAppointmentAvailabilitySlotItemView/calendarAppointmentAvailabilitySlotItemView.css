@@ -1,0 +1,12 @@
+.clickable {
+	cursor: pointer;
+}
+
+.unclickable {
+	cursor: not-allowed;
+	background-color: var(--slds-g-color-surface-container-2);
+}
+
+.selected {
+	background-color: var(--slds-g-color-info-container-1);
+}
